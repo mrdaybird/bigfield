@@ -45,6 +45,7 @@ jobs:
       - name: Build with mdBook
         run: |
           cargo run --bin create_mdbook
+          cp -r assets book/
           mdbook build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
