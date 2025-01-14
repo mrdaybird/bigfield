@@ -25,6 +25,7 @@ dependencies = [
  "hex",
  "hex-literal",
  "rand",
+ "regex",
  "rstest",
 ]
 

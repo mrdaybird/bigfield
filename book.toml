@@ -2,5 +2,11 @@
 authors = ["Vaibhav Pathak"]
 language = "en"
 multilingual = false
-src = "mdbook"
+src = "book"
 title = "My first book"
+
+[preprocessor.katex]
+after = ["links"]
+
+[build]
+build-dir = "docs"
