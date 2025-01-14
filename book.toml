@@ -1,0 +1,6 @@
+[book]
+authors = ["Vaibhav Pathak"]
+language = "en"
+multilingual = false
+src = "mdbook"
+title = "My first book"

@@ -1,0 +1,16 @@
+[package]
+name = "bigfield"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8"
+hex-literal = "0.4"
+hex = "0.4"
+crypto-bigint = "0.6.0-rc.6"
+
+[dev-dependencies]
+rstest = "0.23"
+
+# [profile.test]
+# opt-level = 1
