@@ -1,4 +1,4 @@
-use crate::bigint::{BigInt, Concat, BYTES};
+use crate::bigint::{BigInt, BYTES};
 use std::marker::PhantomData;
 use std::ops::{Add, AddAssign, Mul, MulAssign, Neg, Sub, SubAssign};
 

@@ -35,7 +35,6 @@ fn main() -> io::Result<()>{
         if !dest_folder.exists() {
             fs::create_dir_all(&dest_folder)?;
         }
-        println!("Replacing README.md with index.md...");
         let src_file = File::open(src)?;
         let reader = BufReader::new(src_file);
 
@@ -49,7 +48,10 @@ fn main() -> io::Result<()>{
         }
     }
 
+    println!("Copying SUMMARY.md to {DEST}/SUMMARY.md");
     fs::copy("SUMMARY.md", "book/SUMMARY.md")?;
+
+    println!("Done!");
 
     Ok(())
 }
