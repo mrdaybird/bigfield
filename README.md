@@ -1,12 +1,10 @@
-#![feature(const_for)]
-#![feature(generic_const_exprs)]
-#![feature(bigint_helper_methods)]
-#![feature(const_bigint_helper_methods)]
-#![allow(incomplete_features)]
+# BigField
 
-pub mod bigfield;
-pub mod bigint;
+Modulo Arithmetic over large integers.
 
+To see a working example, see `main.rs`.
+
+```
 use bigfield::{Modulus, PrimeField};
 use bigint::{BigInt, Concat};
 
@@ -25,3 +23,4 @@ fn main() {
     let f = d - e;
     println!("10 - 100 (mod P) = {}", hex::encode(f.to_be_bytes()));
 }
+```
